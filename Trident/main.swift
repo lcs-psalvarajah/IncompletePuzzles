@@ -15,14 +15,21 @@ print("=======")
 // INPUT
 
 // Get tine length
+
 print("Enter tine length:")
-print("   ", terminator: "")
+print("  ", terminator: "")
 let tineLength = Int(readLine()!)!
+
+
 
 // Get tine spacing
 print("Enter tine spacing:")
-print("   ", terminator: "")
+print("  ", terminator: "")
 let spacing = Int(readLine()!)!
+
+print("Enter length of handle")
+print("  ", terminator: "")
+let lenghtHandle = Int(readLine()!)!
 
 // OUTPUT
 
@@ -44,4 +51,10 @@ for _ in 1...tineLength {
     print("")
 }
 
+// draw the horizonatal connecting part of the trident
+
+for _ in 1...(3 + spacing + spacing) {
+    print("*", terminator: "")
+}
+print("")
 
