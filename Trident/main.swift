@@ -21,15 +21,15 @@ print("  ", terminator: "")
 let tineLength = Int(readLine()!)!
 
 
-
 // Get tine spacing
 print("Enter tine spacing:")
 print("  ", terminator: "")
 let spacing = Int(readLine()!)!
 
-print("Enter length of handle")
+// Get handle length
+print("Enter handle length:")
 print("  ", terminator: "")
-let lenghtHandle = Int(readLine()!)!
+let handleLength = Int(readLine()!)!
 
 // OUTPUT
 
@@ -58,3 +58,22 @@ for _ in 1...(3 + spacing + spacing) {
 }
 print("")
 
+// draw the handle length of the trident
+
+for _ in 1...handleLength {
+   
+    // Print the handle length
+    for _ in 1...2 {
+        // Print part of the handle
+        print("*", terminator: "")
+        
+        // Print space between tines
+        for _ in 1...spacing {
+            print(" ", terminator: "")
+        }
+        
+    }
+    // Go to next line of output
+    print("")
+    
+}
