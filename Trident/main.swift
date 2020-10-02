@@ -61,19 +61,11 @@ print("")
 // draw the handle length of the trident
 
 for _ in 1...handleLength {
-   
-    // Print the handle length
-    for _ in 1...2 {
-        // Print part of the handle
-        print("*", terminator: "")
-        
-        // Print space between tines
-        for _ in 1...spacing {
-            print(" ", terminator: "")
-        }
-        
+
+    for _ in 1...(spacing + 1) {
+        print(" ", terminator: "")
     }
-    // Go to next line of output
-    print("")
-    
+    // draw a star
+    print("*")
 }
+
