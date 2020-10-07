@@ -47,7 +47,12 @@ a += weekend * 0.20
 var b = 0.00
 
 // Add daytime cost
-b += (day - 250) * 0.45
+
+if day >= 250 {
+    b += (day - 250) * 0.45
+} else {
+    b += 0
+}
 
 // Add evening cost
 b += evening * 0.35
