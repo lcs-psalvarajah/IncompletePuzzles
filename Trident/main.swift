@@ -16,21 +16,91 @@ print("=======")
 // INPUT
 
 // Get tine length
-
-print("Enter tine length:")
-print("  ", terminator: "")
-let tineLength = Int(readLine()!)!
-
+var tineLength = 0
+while true {
+    
+    //Prompt the user
+    print("Enter tine length")
+    
+    //Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    //Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    //Check that the value is positive
+    guard givenInteger > 0 else {
+        continue
+    }
+    
+    //Assign the given integer to our "day" variable
+    tineLength = givenInteger
+    
+    //Stop loop
+    break
+}
 
 // Get tine spacing
-print("Enter tine spacing:")
-print("  ", terminator: "")
-let spacing = Int(readLine()!)!
+var tineSpacing = 0
+while true {
+    
+    //Prompt the user
+    print("Enter tine spacing")
+    
+    //Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    //Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    //Check that the value is positive
+    guard givenInteger > 0 else {
+        continue
+    }
+    
+    //Assign the given integer to our "day" variable
+    tineSpacing = givenInteger
+    
+    //Stop loop
+    break
+}
 
 // Get handle length
-print("Enter handle length:")
-print("  ", terminator: "")
-let handleLength = Int(readLine()!)!
+var handleLength = 0
+while true {
+    
+    //Prompt the user
+    print("Enter handle length")
+    
+    //Collect input
+    guard let givenInput = readLine() else{
+        continue
+    }
+    
+    //Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    //Check that the value is positive
+    guard givenInteger > 0 else {
+        continue
+    }
+    
+    //Assign the given integer to our "day" variable
+    handleLength = givenInteger
+    
+    //Stop loop
+    break
+}
 
 // OUTPUT
 
@@ -43,7 +113,7 @@ for _ in 1...tineLength {
         print("*", terminator: "")
         
         // Print space between tines
-        for _ in 1...spacing {
+        for _ in 1...tineSpacing {
             print(" ", terminator: "")
         }
         
@@ -54,7 +124,7 @@ for _ in 1...tineLength {
 
 // draw the horizonatal connecting part of the trident
 
-for _ in 1...(3 + spacing + spacing) {
+for _ in 1...(3 + tineSpacing + tineSpacing) {
     print("*", terminator: "")
 }
 print("")
@@ -63,7 +133,7 @@ print("")
 
 for _ in 1...handleLength {
 
-    for _ in 1...(spacing + 1) {
+    for _ in 1...(tineSpacing + 1) {
         print(" ", terminator: "")
     }
     // draw a star
