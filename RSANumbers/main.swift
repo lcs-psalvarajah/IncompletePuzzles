@@ -15,13 +15,67 @@ print("===========")
 
 // INPUT
 
-// Get lower limit of range
-print("Enter lower limit of range")
-let lower = Int(readLine()!)!
 
-// Get upper limit of range
-print("Enter upper limit of range")
-let upper = Int(readLine()!)!
+
+//Get lower number
+var lower = 0
+while true {
+    
+    //Prompt the user
+    print("Enter lower limit of range")
+    
+    //Collect input
+    guard let givenInput = readLine() else {
+        continue
+    }
+    
+    //Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    //Check the number is positive (zero or other)
+    guard givenIntger >= 0 else {
+        continue
+    }
+    
+    // Assign the given integer to our "lower" variable
+    lower = givenInteger
+    
+    //Stop the loop
+    break
+}
+
+// Get upper number
+var upper = 0
+while true {
+    
+    //Prompt the user
+    print("Enter upper limit of range")
+    
+    //Collect input
+    guard let givenInput = readLine() else {
+        continue
+    }
+    
+    //Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    //Check the number is positive (zero or other)
+    guard givenIntger > lower else {
+        continue
+    }
+    
+    // Assign the given integer to our "lower" variable
+    upper = givenInteger
+    
+    //Stop the loop
+    break
+}
+
+
 
 // PROCESS
 
