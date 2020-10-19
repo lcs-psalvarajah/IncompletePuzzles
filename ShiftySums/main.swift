@@ -48,17 +48,17 @@ var output = 0  // (12)
 //}
 
 
-let numberLoops = 0...k
-
-for i in numberLoops {
-    output += n
-    
-    for j in 1...k {
-        
-        
-    }
-    
-}
+//let numberLoops = 0...k
+//
+//for i in numberLoops {
+//    output += n
+//
+//    for j in 1...k {
+//
+//
+//    }
+//
+//}
 
 
 // OUTPUT
