@@ -15,110 +15,21 @@ print("=============")
 
 // INPUT
 
-        //// Get daytime minutes
-        //print("Number of daytime minutes?")
-        //let day = Double(readLine()!)!
-
-
 //Get daytime minutes
-
-// this is to make sure there is no user mistakes that makes the code crash
-var day = 0.00
-while true {
+var day = Double(Int.collectInput(withPrompt: "Number of daytime minutes? ",
+                           minimum: 0,
+                           maximum: nil))
     
-    //Prompt the user
-    print("Number of daytime minutes?")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Double(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    day = givenInteger
-    
-    //Stop loop
-    break
-}
-    
-
-        //// Get evening minutes
-        //print("Number of evening minutes?")
-        //let evening = Double(readLine()!)!
-
 // get evening minutes
+var evening = Double(Int.collectInput(withPrompt: "Number of evening minutes? ",
+                           minimum: 0,
+                           maximum: nil))
 
-var evening = 0.00
-while true {
-    
-    //Prompt the user
-    print("Number of evening minutes?")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Double(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    evening = givenInteger
-    
-    //Stop loop
-    break
-}
-
-        //// Get weekend minutes
-        //print("Number of weekend minutes?")
-        //let weekend = Double(readLine()!)!
 
 // get weekend minutes
-
-var weekend = 0.00
-while true {
-    
-    //Prompt the user
-    print("Number of weekend minutes?")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Double(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    weekend = givenInteger
-    
-    //Stop loop
-    break
-}
+var weekend = Double(Int.collectInput(withPrompt: "Number of weekend minutes? ",
+                                  minimum: 0,
+                           maximum: nil))
 
 // PROCESS
 

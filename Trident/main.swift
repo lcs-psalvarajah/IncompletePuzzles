@@ -14,93 +14,20 @@ print("Trident")
 print("=======")
 
 // INPUT
-
-// Get tine length
-var tineLength = 0
-while true {
-    
-    //Prompt the user
-    print("Enter tine length")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger > 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    tineLength = givenInteger
-    
-    //Stop loop
-    break
-}
+// get tine length
+var tineLength = Int.collectInput(withPrompt: "Enter tine length ",
+                                  minimum: 1,
+                                  maximum: 10)
 
 // Get tine spacing
-var tineSpacing = 0
-while true {
-    
-    //Prompt the user
-    print("Enter tine spacing")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger > 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    tineSpacing = givenInteger
-    
-    //Stop loop
-    break
-}
+var tineSpacing = Int.collectInput(withPrompt: "Enter tine spacing ",
+                                  minimum: 1,
+                                  maximum: 10)
 
 // Get handle length
-var handleLength = 0
-while true {
-    
-    //Prompt the user
-    print("Enter handle length")
-    
-    //Collect input
-    guard let givenInput = readLine() else{
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    //Check that the value is positive
-    guard givenInteger > 0 else {
-        continue
-    }
-    
-    //Assign the given integer to our "day" variable
-    handleLength = givenInteger
-    
-    //Stop loop
-    break
-}
+var handleLength = Int.collectInput(withPrompt: "Enter handle length ",
+                                  minimum: 1,
+                                  maximum: 10)
 
 // OUTPUT
 

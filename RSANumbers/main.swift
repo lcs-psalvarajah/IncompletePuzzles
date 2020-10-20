@@ -18,33 +18,9 @@ print("===========")
 
 
 //Get lower number
-var lower = 0
-while true {
-    
-    //Prompt the user
-    print("Enter lower limit of range")
-    
-    //Collect input
-    guard let givenInput = readLine() else {
-        continue
-    }
-    
-    //Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    //Check the number is positive (zero or other)
-    guard givenIntger >= 0 else {
-        continue
-    }
-    
-    // Assign the given integer to our "lower" variable
-    lower = givenInteger
-    
-    //Stop the loop
-    break
-}
+var lower = Int.collectInput(withPrompt: "Enter lower limit of range ",
+                                  minimum: 0,
+                                  maximum: nil)
 
 // Get upper number
 var upper = 0
