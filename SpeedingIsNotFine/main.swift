@@ -19,13 +19,30 @@ print("====================")
 print("What is the speed limit, in km/h? ", terminator: "")
 let limit = Int(readLine()!)!
 
-let speed = 45
+// Ask for speed of the car
+print("What is the recorded speed of the car, in km/h? ", terminator: "")
+let speed = Int(readLine()!)!
 
 // PROCESS AND OUTPUT
 
+let difference = speed - limit
+
 // See whether the driver is within the speed limit, and if they are not, see how much they are above the limit.
-if speed < limit {
+
+switch difference {
+case 1...20:
+    print("You are speeding and your fine is $100")
+case 21...30:
+    print("You are speeding and your fine is $270")
+case 31...:
+    print("You are speeding and your fine is $500")
+default:
     print("Congratulations, you are within the speed limit!")
-} else {
-    print("You are speeding.")
 }
+
+
+
+
+
+
+
