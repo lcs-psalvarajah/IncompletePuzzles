@@ -19,7 +19,6 @@ print("===========")
 let n = Int(readLine()!)!
 
 // How many times should we shift?
-//    let k = 3
 
 let k = Int(readLine()!)!
 
@@ -29,23 +28,16 @@ let k = Int(readLine()!)!
 var output = 0  // (12)
     //output += n * 10   (120)       (132)
     //output += n * 10 * 10    (1200)       (1332)
-    //output += n * 10 * 10 * 10     (12000)       (13332)
+//    output += n * 10 * 10 * 10     (12000)       (13332)
 
-//    var t: Int = 10
-//    var power: Int = k
-//
-//
-// for _ in 0...k {
-//
-//        output += n * Int(pow(Double(t), Double(power)))
-//
-//
-//}
+for _ in 0...k {
+    output += n * i  
+     
+    for i in 1...k {
+        output = 10 * k
+    }
+}
 
-//infix operator **
-//func **(lhs: Double, rhs: Double) -> Double {
-//    return pow(lhs, rhs)
-//}
 
 
 //let numberLoops = 0...k
