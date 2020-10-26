@@ -52,3 +52,5 @@ func divisorCount(of givenNumber: Int) -> Int {
 
 // How many divisors does a number have?
 print("5 has this many divisors... \(divisorCount(of: 5))")
+
+
