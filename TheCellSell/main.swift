@@ -38,7 +38,12 @@ var weekend = Double(Int.collectInput(withPrompt: "Number of weekend minutes? ",
 var a = 0.00
 
 // Add daytime cost
-a += (day - 100) * 0.25
+
+if day >= 100 {
+    a += (day - 100) * 0.25
+} else {
+    a += 0
+}
 
 // Add evening cost
 a += evening * 0.15
@@ -70,6 +75,8 @@ print("Plan B costs \(b)")
 
 if a > b {
     print("Plan B is cheapest.")
+} else if a == b{
+    print("Plans A and B are the same price")
 } else {
-    print("Plan A is cheapest.")
+print("Plan A is cheapest.")
 }
