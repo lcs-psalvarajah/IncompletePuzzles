@@ -59,4 +59,62 @@ class TheCellSellTests: XCTestCase {
                                     weekend: 6))
         
     }
+    
+    // Typical case
+    // • Daytime minutes less than free threshold for plan B, not plan A
+    // • Plan A is cheapest 
+    func testTypicalCaseD() {
+      
+        XCTAssertEqual("""
+            Plan A costs 4950
+            Plan B costs 5500
+            Plan A is cheapest.
+            """,
+                       compareCosts(day: 200,
+                                    evening: 150,
+                                    weekend: 10))
+    }
+    
+    // Typical case
+    // • Daytime minutes less than free threshold for plan B, not plan A
+    // • Plan B is cheapest 
+    func testTypicalCaseE() {
+        
+        XCTAssertEqual("""
+            Plan A costs 5800
+            Plan B costs 5600
+            Plan B is cheapest.
+            """,
+                       compareCosts(day: 210,
+                                    evening: 110,
+                                    weekend: 70))
+            
+    }
+    
+    //Typical case
+    // • Daytime minutes less than free threshold for plan B, not plan A
+    // • Plans A and B are same cost 
+    func testTypicalCaseF() {
+        XCTAssertEqual("""
+            Plan A costs 5300
+            Plan B costs 5300
+            Plans A and B are the same price.
+            """,
+                       compareCosts(day: 210,
+                                    evening: 130,
+                                    weekend: 30))
+    }
+
+
+    
 }
+
+
+
+
+
+
+
+
+
+
