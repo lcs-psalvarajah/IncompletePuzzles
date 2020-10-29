@@ -39,8 +39,8 @@ let dessert = Int.collectInput(withPrompt: "Please enter a dessert choice", mini
 // PROCESS
 // NOTE: Give some thought to what kind of data structure would be helpful for this program.
 //       Perhaps a collection type of some sort?
-var output = 0
-    
+
+
 // A dictiory to store the information for burger
 
 var burgerOrder = [
@@ -50,12 +50,16 @@ var burgerOrder = [
     4: 0
 ]
 
+// A dictiory to store the information for drinks
+
 var drinkOrder = [
     1: 130,
     2: 160,
     3: 118,
     4: 0
 ]
+
+// A dictiory to store the information for side order
 
 var sideOrder = [
     1: 100,
@@ -64,15 +68,23 @@ var sideOrder = [
     4: 0
 ]
 
+// A dictiory to store the information for dessert
+
 var dessertOrder = [
     1: 167,
     2: 226,
     3: 75,
     4: 0]
 
+// nil coalescing operator, ??, is a quick way to provide a default value should a "nil" be encountered
+// in the case of a dictionary, it can happen when you ask for a value from a key that does not exist
+var calorieTotal = drinkOrder[drink] ?? 0
+calorieTotal += burgerOrder[burger] ?? 0
+calorieTotal += sideOrder[side] ?? 0
+calorieTotal += dessertOrder[dessert] ?? 0
 
 
 // OUTPUT
 // Show the calories total for the choices made by the user.
 
-print("Your calorie amount is \(output)")
+print("Your calorie amount is \(calorieTotal)")
