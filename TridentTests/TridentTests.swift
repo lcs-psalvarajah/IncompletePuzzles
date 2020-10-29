@@ -30,7 +30,7 @@ class TridentTests: XCTestCase {
             """,
                        drawTrident(tineLength: 2,
                                    tineSpacing: 3,
-                                   handleLenth: 4))
+                                   handleLength: 4))
         
     }
 
@@ -47,7 +47,7 @@ class TridentTests: XCTestCase {
             """,
                        drawTrident(tineLength: 4,
                                    tineSpacing: 3,
-                                   handleLenth: 2))
+                                   handleLength: 2))
         
     }
 
@@ -60,7 +60,7 @@ class TridentTests: XCTestCase {
             """,
                        drawTrident(tineLength: 1,
                                    tineSpacing: 5,
-                                   handleLenth: 1))
+                                   handleLength: 1))
         
     }
 
@@ -91,7 +91,7 @@ class TridentTests: XCTestCase {
             """,
                        drawTrident(tineLength: 10,
                                    tineSpacing: 10,
-                                   handleLenth: 10))
+                                   handleLength: 10))
         
     }
 
@@ -102,7 +102,7 @@ class TridentTests: XCTestCase {
             """,
                        drawTrident(tineLength: 0,
                                    tineSpacing: 0,
-                                   handleLenth: 0))
+                                   handleLength: 0))
     }
 
 }
