@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E08FBCA254B15500014C595 /* TridentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E08FBC9254B15500014C595 /* TridentTests.swift */; };
 		0E41A570252F32CE00F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A56F252F32CE00F2CECF /* main.swift */; };
 		0E41A581252F343100F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A580252F343100F2CECF /* main.swift */; };
 		0E41A5B02537209E00F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A5AF2537209E00F2CECF /* main.swift */; };
@@ -155,6 +156,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E08FBC7254B15500014C595 /* TridentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TridentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E08FBC9254B15500014C595 /* TridentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TridentTests.swift; sourceTree = "<group>"; };
+		0E08FBCB254B15500014C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E41A56D252F32CE00F2CECF /* SpeedingIsNotFine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpeedingIsNotFine; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E41A56F252F32CE00F2CECF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0E41A57E252F343100F2CECF /* ISBN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ISBN; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +193,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E08FBC4254B15500014C595 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E41A56A252F32CE00F2CECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +308,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E08FBC8254B15500014C595 /* TridentTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E08FBC9254B15500014C595 /* TridentTests.swift */,
+				0E08FBCB254B15500014C595 /* Info.plist */,
+			);
+			path = TridentTests;
+			sourceTree = "<group>";
+		};
 		0E41A56E252F32CE00F2CECF /* SpeedingIsNotFine */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE0D95D252563ED0090B2E0 /* Trident */,
+				0E08FBC8254B15500014C595 /* TridentTests */,
 				0EE0D96A252564CB0090B2E0 /* TheCellSell */,
 				0E6FD4E725485857008B0E10 /* TheCellSellExemplar */,
 				0E6FD51525485AC0008B0E10 /* TheCellSellTestsExemplar */,
@@ -442,6 +463,7 @@
 				0EAE19752548EE9500667C5F /* WinningScore */,
 				0EAE198D2548F4D200667C5F /* ComputerPurchase */,
 				0EAE19A62548F6B700667C5F /* DeficientPerfectAbundant */,
+				0E08FBC7254B15500014C595 /* TridentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -465,6 +487,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E08FBC6254B15500014C595 /* TridentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E08FBCE254B15500014C595 /* Build configuration list for PBXNativeTarget "TridentTests" */;
+			buildPhases = (
+				0E08FBC3254B15500014C595 /* Sources */,
+				0E08FBC4254B15500014C595 /* Frameworks */,
+				0E08FBC5254B15500014C595 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TridentTests;
+			productName = TridentTests;
+			productReference = 0E08FBC7254B15500014C595 /* TridentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0E41A56C252F32CE00F2CECF /* SpeedingIsNotFine */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E41A573252F32CE00F2CECF /* Build configuration list for PBXNativeTarget "SpeedingIsNotFine" */;
@@ -729,6 +768,9 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					0E08FBC6254B15500014C595 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 					0E41A56C252F32CE00F2CECF = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -790,7 +832,10 @@
 			projectRoot = "";
 			targets = (
 				0EE0D95B252563ED0090B2E0 /* Trident */,
+				0E08FBC6254B15500014C595 /* TridentTests */,
 				0EE0D968252564CB0090B2E0 /* TheCellSell */,
+				0E6FD4E525485857008B0E10 /* TheCellSellExemplar */,
+				0E6FD51325485AC0008B0E10 /* TheCellSellTestsExemplar */,
 				0E7364BD2528B54300F3914E /* RSANumbers */,
 				0E73651E252B632100F3914E /* ShiftySums */,
 				0E73652D252B64C800F3914E /* ISpeakTXTMSG */,
@@ -799,8 +844,6 @@
 				0E41A5AC2537209E00F2CECF /* MagicSquares */,
 				0EB21DB525449AB60021BC96 /* ChipsFastFood */,
 				0EB21DC92544A3D40021BC96 /* IconScaling */,
-				0E6FD4E525485857008B0E10 /* TheCellSellExemplar */,
-				0E6FD51325485AC0008B0E10 /* TheCellSellTestsExemplar */,
 				0EAE19742548EE9500667C5F /* WinningScore */,
 				0EAE198C2548F4D200667C5F /* ComputerPurchase */,
 				0EAE19A52548F6B700667C5F /* DeficientPerfectAbundant */,
@@ -809,6 +852,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E08FBC5254B15500014C595 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E6FD51225485AC0008B0E10 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -819,6 +869,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E08FBC3254B15500014C595 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E08FBCA254B15500014C595 /* TridentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0E41A569252F32CE00F2CECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -943,6 +1001,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0E08FBCC254B15500014C595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TridentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.TridentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0E08FBCD254B15500014C595 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TridentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.TridentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		0E41A571252F32CE00F2CECF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1347,6 +1439,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E08FBCE254B15500014C595 /* Build configuration list for PBXNativeTarget "TridentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E08FBCC254B15500014C595 /* Debug */,
+				0E08FBCD254B15500014C595 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0E41A573252F32CE00F2CECF /* Build configuration list for PBXNativeTarget "SpeedingIsNotFine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
