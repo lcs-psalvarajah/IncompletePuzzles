@@ -24,7 +24,7 @@ class RSANumbersTests: XCTestCase {
 
             """,
                        countOfRSANumbersFrom(lower: 5,
-                                             upper: 6)
+                                             upper: 6))
         
     }
 
@@ -35,7 +35,7 @@ class RSANumbersTests: XCTestCase {
 
             """,
                        countOfRSANumbersFrom(lower: 21,
-                                             upper: 26)
+                                             upper: 26))
         
     }
 
@@ -46,7 +46,7 @@ class RSANumbersTests: XCTestCase {
 
             """,
                        countOfRSANumbersFrom(lower: 99,
-                                             upper: 999)
+                                             upper: 999))
         
     }
 
