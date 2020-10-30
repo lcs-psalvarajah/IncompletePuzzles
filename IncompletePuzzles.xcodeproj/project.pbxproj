@@ -44,7 +44,6 @@
 		0E41A581252F343100F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A580252F343100F2CECF /* main.swift */; };
 		0E41A5B02537209E00F2CECF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E41A5AF2537209E00F2CECF /* main.swift */; };
 		0E48F48B254B4C66007530A3 /* ISpeakTXTMSGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E48F48A254B4C66007530A3 /* ISpeakTXTMSGTests.swift */; };
-		0E48F4A6254B4CC3007530A3 /* j2.01.out in Sources */ = {isa = PBXBuildFile; fileRef = 0E48F4A4254B4CC3007530A3 /* j2.01.out */; };
 		0E48F4A7254B4CC3007530A3 /* j2.01.in in Resources */ = {isa = PBXBuildFile; fileRef = 0E48F4A5254B4CC3007530A3 /* j2.01.in */; };
 		0E48F507254B4EA0007530A3 /* j2.01.out in Resources */ = {isa = PBXBuildFile; fileRef = 0E48F4A4254B4CC3007530A3 /* j2.01.out */; };
 		0E6FD4E925485857008B0E10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FD4E825485857008B0E10 /* main.swift */; };
@@ -200,7 +199,6 @@
 		0E08FCBA254B23EE0014C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E08FD4C254B280E0014C595 /* ShiftySumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftySumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E08FD4E254B280E0014C595 /* ShiftySumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftySumsTests.swift; sourceTree = "<group>"; };
-		0E08FD50254B280E0014C595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E08FD67254B28E90014C595 /* j2.06.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = j2.06.out; sourceTree = "<group>"; };
 		0E08FD68254B28E90014C595 /* j2.10.out */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = j2.10.out; sourceTree = "<group>"; };
 		0E08FD69254B28E90014C595 /* j2.05.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = j2.05.in; sourceTree = "<group>"; };
@@ -247,6 +245,7 @@
 		0E48F604254B933A007530A3 /* RSANumbers.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RSANumbers.xctestplan; sourceTree = "<group>"; };
 		0E48F618254B9357007530A3 /* ShiftySums.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ShiftySums.xctestplan; sourceTree = "<group>"; };
 		0E48F619254B9372007530A3 /* ISpeakTXTMSG.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ISpeakTXTMSG.xctestplan; sourceTree = "<group>"; };
+		0E48F640254B9589007530A3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E6FD4E625485857008B0E10 /* TheCellSellExemplar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheCellSellExemplar; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6FD4E825485857008B0E10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0E6FD51425485AC0008B0E10 /* TheCellSellTestsExemplar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheCellSellTestsExemplar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -434,7 +433,7 @@
 			children = (
 				0E08FD66254B28CB0014C595 /* InputOutput */,
 				0E08FD4E254B280E0014C595 /* ShiftySumsTests.swift */,
-				0E08FD50254B280E0014C595 /* Info.plist */,
+				0E48F640254B9589007530A3 /* Info.plist */,
 			);
 			path = ShiftySumsTests;
 			sourceTree = "<group>";
@@ -1088,7 +1087,9 @@
 				0E7364BD2528B54300F3914E /* RSANumbers */,
 				0E08FCB5254B23EE0014C595 /* RSANumbersTests */,
 				0E73651E252B632100F3914E /* ShiftySums */,
+				0E08FD4B254B280E0014C595 /* ShiftySumsTests */,
 				0E73652D252B64C800F3914E /* ISpeakTXTMSG */,
+				0E48F487254B4C66007530A3 /* ISpeakTXTMSGTests */,
 				0E41A56C252F32CE00F2CECF /* SpeedingIsNotFine */,
 				0E41A57D252F343100F2CECF /* ISBN */,
 				0E41A5AC2537209E00F2CECF /* MagicSquares */,
@@ -1097,8 +1098,6 @@
 				0EAE19742548EE9500667C5F /* WinningScore */,
 				0EAE198C2548F4D200667C5F /* ComputerPurchase */,
 				0EAE19A52548F6B700667C5F /* DeficientPerfectAbundant */,
-				0E08FD4B254B280E0014C595 /* ShiftySumsTests */,
-				0E48F487254B4C66007530A3 /* ISpeakTXTMSGTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1227,7 +1226,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E48F48B254B4C66007530A3 /* ISpeakTXTMSGTests.swift in Sources */,
-				0E48F4A6254B4CC3007530A3 /* j2.01.out in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1336,7 +1334,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TridentTests/Info.plist;
+				INFOPLIST_FILE = Trident/TridentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1353,7 +1351,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TridentTests/Info.plist;
+				INFOPLIST_FILE = Trident/TridentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1370,7 +1368,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RSANumbersTests/Info.plist;
+				INFOPLIST_FILE = RSANumbers/RSANumbersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1387,7 +1385,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = RSANumbersTests/Info.plist;
+				INFOPLIST_FILE = RSANumbers/RSANumbersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1404,7 +1402,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ShiftySumsTests/Info.plist;
+				INFOPLIST_FILE = ShiftySums/ShiftySumsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1421,7 +1419,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ShiftySumsTests/Info.plist;
+				INFOPLIST_FILE = ShiftySums/ShiftySumsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1492,7 +1490,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ISpeakTXTMSGTests/Info.plist;
+				INFOPLIST_FILE = ISpeakTXTMSG/ISpeakTXTMSGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1509,7 +1507,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ISpeakTXTMSGTests/Info.plist;
+				INFOPLIST_FILE = ISpeakTXTMSG/ISpeakTXTMSGTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1544,7 +1542,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TheCellSellTestsExemplar/Info.plist;
+				INFOPLIST_FILE = TheCellSell/TheCellSellTestsExemplar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1561,7 +1559,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TheCellSellTestsExemplar/Info.plist;
+				INFOPLIST_FILE = TheCellSell/TheCellSellTestsExemplar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
