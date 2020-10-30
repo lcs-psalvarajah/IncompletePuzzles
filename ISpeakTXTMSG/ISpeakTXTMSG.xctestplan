@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "56A9C3AB-15D0-4589-B21F-B948E234F808",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IncompletePuzzles.xcodeproj",
+        "identifier" : "0E48F487254B4C66007530A3",
+        "name" : "ISpeakTXTMSGTests"
+      }
+    }
+  ],
+  "version" : 1
+}
