@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "50D37BD7-9892-410B-8D1C-A6EB6674B4A5",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IncompletePuzzles.xcodeproj",
+        "identifier" : "0E6FD51325485AC0008B0E10",
+        "name" : "TheCellSellTestsExemplar"
+      }
+    }
+  ],
+  "version" : 1
+}

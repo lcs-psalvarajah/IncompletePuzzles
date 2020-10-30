@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "B69E6989-508A-4DCA-9F65-BF4C108152DE",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IncompletePuzzles.xcodeproj",
+        "identifier" : "0E08FBC6254B15500014C595",
+        "name" : "TridentTests"
+      }
+    }
+  ],
+  "version" : 1
+}

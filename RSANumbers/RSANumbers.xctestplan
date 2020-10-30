@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "B27A0854-8016-4DD8-940B-A342BB18ECE2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IncompletePuzzles.xcodeproj",
+        "identifier" : "0E08FCB5254B23EE0014C595",
+        "name" : "RSANumbersTests"
+      }
+    }
+  ],
+  "version" : 1
+}
