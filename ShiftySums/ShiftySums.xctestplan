@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "10038773-D794-44AD-B627-F5978543017D",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:IncompletePuzzles.xcodeproj",
+        "identifier" : "0E08FD4B254B280E0014C595",
+        "name" : "ShiftySumsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
