@@ -56,13 +56,21 @@ func divisorCount(of givenNumber: Int) -> Int {
 }
 
 
+var countOfRSANumbers = 0
 
 for i in lower...upper {
-    print(i)
-    
+
     // How many divisors does a number have?
     let numberOfDivisors = divisorCount(of: i)
     print("\(i) has \(numberOfDivisors) divisors")
+    
+    //look for RSA numbers
+    if numberOfDivisors == 4 {
+        countOfRSANumbers += 1
+        
+    }
 }
+
+print(" The number of RSA numbers between \(lower) and \(upper) is \(countOfRSANumbers)")
 
 
