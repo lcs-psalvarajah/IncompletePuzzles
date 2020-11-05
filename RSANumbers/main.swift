@@ -41,7 +41,7 @@ func divisorCount(of givenNumber: Int) -> Int {
         let remainder = givenNumber % i
 
         // DEBUG output...
-        print("\(givenNumber) \\ \(i) has a remainder of \(remainder)")
+//        print("\(givenNumber) \\ \(i) has a remainder of \(remainder)")
 
         // TODO: Add some code here... we need to keep track of how many divisors there are
         if remainder == 0 {
@@ -55,12 +55,14 @@ func divisorCount(of givenNumber: Int) -> Int {
 
 }
 
-// How many divisors does a number have?
-let numberOfDivisors = divisorCount(of: 10)
-print("10 has \(numberOfDivisors) divisors")
+
 
 for i in lower...upper {
     print(i)
+    
+    // How many divisors does a number have?
+    let numberOfDivisors = divisorCount(of: i)
+    print("\(i) has \(numberOfDivisors) divisors")
 }
 
 
