@@ -20,30 +20,30 @@ class RSANumbersTests: XCTestCase {
     func testCaseA() {
         
         XCTAssertEqual("""
-            The number of RSA numbers between 5 and 6 is 1
+            The number of RSA numbers between 1 and 10 is 3
             """,
-                       countOfRSANumbersFrom(lower: 5,
-                                             upper: 6))
+                       countOfRSANumbersFrom(lower: 1,
+                                             upper: 10))
         
     }
 
     func testCaseB() {
         
         XCTAssertEqual("""
-            The number of RSA numbers between 21 and 26 is 3
+            The number of RSA numbers between 1 and 1000 is 292
             """,
-                       countOfRSANumbersFrom(lower: 21,
-                                             upper: 26))
+                       countOfRSANumbersFrom(lower: 1,
+                                             upper: 1000))
         
     }
 
     func testCaseC() {
         
         XCTAssertEqual("""
-            The number of RSA numbers between 99 and 999 is 260
+            The number of RSA numbers between 1000 and 1000 is 0
             """,
-                       countOfRSANumbersFrom(lower: 99,
-                                             upper: 999))
+                       countOfRSANumbersFrom(lower: 1000,
+                                             upper: 1000))
         
     }
 

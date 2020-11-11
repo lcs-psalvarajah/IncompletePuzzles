@@ -56,7 +56,7 @@ func divisorCount(of givenNumber: Int) -> Int {
 }
 
 
-func countOfRSANumbers(lower: Int, upper: Int) -> String {
+func countOfRSANumbersFrom(lower: Int, upper: Int) -> String {
     // Count the number of divisors in the given Number
 
 
@@ -84,7 +84,7 @@ func countOfRSANumbers(lower: Int, upper: Int) -> String {
     return result
 }
 
-let output = countOfRSANumbers(lower: lower, upper: upper)
+let output = countOfRSANumbersFrom(lower: lower, upper: upper)
 
 print(output)
 
