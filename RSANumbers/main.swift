@@ -20,15 +20,15 @@ print("===========")
 
 // INPUT
 // Get lower limit of range
-print("Enter lower limit of range")
-let lower = Int(readLine()!)!
 
-// Get upper limit of range
-print("Enter upper limit of range")
-let upper = Int(readLine()!)!
+let lower = Int.collectInput(withPrompt: "Enter lower limit of range", minimum: 0, maximum: 1000)
+
+//Get upper limit range
+
+let upper = Int.collectInput(withPrompt: "Enter upper limit of range", minimum: lower, maximum: 1000)
+
 
 // PROCESS
-// Count the number of divisors in the given Number
 func divisorCount(of givenNumber: Int) -> Int {
 
     // 1 is always a divisor, so is the given number
@@ -56,21 +56,38 @@ func divisorCount(of givenNumber: Int) -> Int {
 }
 
 
-var countOfRSANumbers = 0
+func countOfRSANumbers(lower: Int, upper: Int) -> String {
+    // Count the number of divisors in the given Number
 
-for i in lower...upper {
 
-    // How many divisors does a number have?
-    let numberOfDivisors = divisorCount(of: i)
-    print("\(i) has \(numberOfDivisors) divisors")
-    
-    //look for RSA numbers
-    if numberOfDivisors == 4 {
-        countOfRSANumbers += 1
+    var countOfRSANumbers = 0
+
+    for i in lower...upper {
+
+        // How many divisors does a number have?
+        let numberOfDivisors = divisorCount(of: i)
+//        print("\(i) has \(numberOfDivisors) divisors")
         
+        //look for RSA numbers
+        if numberOfDivisors == 4 {
+            countOfRSANumbers += 1
+            
+        }
     }
+    
+    //Build the result to be returned
+    
+    var result = ""
+    
+    result += "The number of RSA numbers between \(lower) and \(upper) is \(countOfRSANumbers)"
+    
+    return result
 }
 
-print(" The number of RSA numbers between \(lower) and \(upper) is \(countOfRSANumbers)")
+let output = countOfRSANumbers(lower: lower, upper: upper)
+
+print(output)
+
+
 
 

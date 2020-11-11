@@ -60,6 +60,7 @@
 		0EE0D95F252563ED0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D95E252563ED0090B2E0 /* main.swift */; };
 		0EE0D96C252564CB0090B2E0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE0D96B252564CB0090B2E0 /* main.swift */; };
 		C81549012549E3C3006D26B6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87EFC35253F5F43001A2740 /* Extensions.swift */; };
+		C833A65A255B2B0100453383 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7364C02528B54400F3914E /* main.swift */; };
 		C83FBD472548A6E700185550 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87EFC35253F5F43001A2740 /* Extensions.swift */; };
 		C83FBD542548A6EA00185550 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87EFC35253F5F43001A2740 /* Extensions.swift */; };
 		C83FBD552548A6EE00185550 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87EFC35253F5F43001A2740 /* Extensions.swift */; };
@@ -1195,6 +1196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E08FCB9254B23EE0014C595 /* RSANumbersTests.swift in Sources */,
+				C833A65A255B2B0100453383 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
